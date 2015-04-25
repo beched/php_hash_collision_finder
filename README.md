@@ -9,12 +9,16 @@ Compile it with g++ or with clang++ (some g++ versions cannot compile this due t
 
 Example of usage:
 ```
-$ ./hashcol asdINJ123 4
+$ time ./hashcol asdINJ123 4
 Started thread from: 32
 Started thread from: 56
 Started thread from: 80
 Started thread from: 104
 FOUND 96 40 47 51 
+
+real	0m56.632s
+user	3m30.166s
+sys	0m0.401s
 $ php -r 'var_dump(md5("asd".chr(96).chr(40).chr(47).chr(51)."123")=="0");'
 bool(true)
 ```

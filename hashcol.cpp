@@ -70,7 +70,7 @@ void doit(int from, std::string pre_mask, std::string post_mask) {
 
 int main(int argc, char *argv[]) {
     if(argc < 2) {
-        std::cout << "Usage: ./md5col prefixINJpostfix <len> <threads>" << std::endl;
+        std::cout << "Usage: ./hashcol prefixINJpostfix <len> <threads>" << std::endl;
         return 0;
     }
     if(argc > 2) {

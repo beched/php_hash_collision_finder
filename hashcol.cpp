@@ -53,7 +53,7 @@ void doit(int from, std::string pre_mask, std::string post_mask) {
         }
         for(int j = offset + LEN_BRUTE - 1; j >= offset; --j) {
             if(test[j] == 127) {
-                if(j == 0) {
+                if(j == offset) {
                     std::cout << "Finished thread from: " << from << std::endl;
                     return;
                 }

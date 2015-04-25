@@ -1,7 +1,8 @@
 /*
  * MD5 collision modulo PHP equivalence comparison generation PoC
- * Compilation: clang++ -O3 -std=c++11 -pthread md5.cpp md5col.cpp -o md5col
- * Usage: ./md5col <prefix>INJ<postfix> <len> <threads>
+ * Compilation: clang++ -O3 -std=c++11 -pthread md5.cpp hashcol.cpp -o hashcol
+ * Usage: ./hashcol <prefix>INJ<postfix> <len> <threads>
+ * Author: Beched
  */
 
 #include <chrono>

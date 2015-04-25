@@ -1,7 +1,7 @@
 # PHP hash collision finder
 
 This is a tool written in C++, which demonstrates hash collisions (currently only md5) modulo PHP equivalence (== comparison operator). That is, it searches the string $s, such as:
-`strlen($s) == $n && md5($s) == '0'`
+`strlen($s) == $n && md5($prefix . $s . $suffix) == '0'`
 
 This property can be exploited in various signature verification algorithms, and this tool was written for the purpose of vulnerability demonstration without sending a lot of web requests.
 
